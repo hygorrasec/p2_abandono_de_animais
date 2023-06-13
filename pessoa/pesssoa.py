@@ -1,6 +1,8 @@
-class Interesso:
-    def __init__(self, nome, contato, especie_interesse, preferencia_animal=Non):
+class pessoa:
+    def __init__(self, nome, telefone, email, especie_interesse, preferencia_animal=None):
         self.nome = nome
-        self.contato = contat
+        self.telefone = telefone
+        self.email = email
         self.especie_interesse = especie_interesse
         self.preferencia_animal = preferencia_animal
+        
