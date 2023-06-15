@@ -1,6 +1,6 @@
 # Sistema de Cadastro e Adoção de Animais
 
-Este repositório contém o código-fonte de um sistema desenvolvido para a prefeitura que tem como objetivo cadastrar e facilitar o processo de adoção de animais. O sistema foi elaborado como parte de um estudo de caso realizado por alunos da disciplina de Estrutura de Dados, ministrada pelo professor Marcio Garrido ([GitHub](https://github.com/marciogarridoLaCop)), a fim de validar a proposta do programa junto ao solicitante.
+Este repositório contém o código-fonte de um sistema desenvolvido para a prefeitura que tem como objetivo cadastrar e facilitar o processo de adoção de animais. O sistema foi elaborado como parte de um estudo de caso realizado por alunos do curso de Engenharia de Software na disciplina de Estrutura de Dados, ministrada pelo professor Marcio Garrido ([GitHub](https://github.com/marciogarridoLaCop)), a fim de validar a proposta do programa junto ao solicitante.
 
 ## Participantes
 
@@ -27,7 +27,7 @@ Foi desenvolvido um protótipo inicial em Python, mesmo que em formato de texto 
 
 ## Contribuição
 
-Este projeto foi desenvolvido por Fábio Lima e Hygor Rasec como parte de um estudo de caso acadêmico da disciplina de Estrutura de Dados, ministrada pelo professor Marcio Garrido ([GitHub](https://github.com/marciogarridoLaCop)). No entanto, contribuições são bem-vindas. Sinta-se à vontade para abrir uma issue ou enviar um pull request com melhorias, correções de bugs ou novas funcionalidades.
+Este projeto foi desenvolvido por Fábio Lima e Hygor Rasec como parte de um estudo de caso acadêmico da disciplina de Estrutura de Dados do curso de Engenharia de Software, ministrada pelo professor Marcio Garrido ([GitHub](https://github.com/marciogarridoLaCop)). No entanto, contribuições são bem-vindas. Sinta-se à vontade para abrir uma issue ou enviar um pull request com melhorias, correções de bugs ou novas funcionalidades.
 
 ## Licença
 
