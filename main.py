@@ -35,7 +35,7 @@ Aqui está um exemplo de representação visual de uma pilha:
 
 from modules.cadastrar_animal import CadastrarAnimal
 from modules.cadastrar_pessoa import CadastrarPessoa
-
+from modules.funcoes_validaçao import *
 
 def gerar_relatorio(animais, pessoas):
     print("Relatório de Cruzamento de Espécies Disponíveis x Possíveis Candidatos:")
@@ -57,15 +57,17 @@ def menu():
     pessoas = CadastrarPessoa()
     while True:
         pesquisar_animal = animais.pesquisar_animais()
-        print('Menu: ')
-        print('1 - Cadastrar Animal')
-        print('2 - Cadastrar Pessoa')
-        print('3 - Pesquisar Animais Disponíveis')
-        print('4 - Pesquisar Pessoas Interessadas')
-        print('5 - Sair')
-        opcao = input('> ')
+        cabecalho('\033[1;32m<<<SISTEMA DE ADOÇÃO>>>\033[m')
+        cabecalho('''\033[1;91m
+[1] Cadastrar Animal
+[2] Cadastrar Pessoa
+[3] Pesquisar Animais Disponíveis
+[4] Pesquisar Pessoas Interessadas
+[5] Sair
+          \033[m''')
+        opcao = verificar_opcao('\033[1;36mInforme uma opção: \033[m', '\033[1;31mDigite apenas números.\033[m')
 
-        if opcao == '1':
+        if opcao == 1:
 
             while True:
                 tipo_animal = input('\nInforme o tipo de Animal (ex: canino, felino): ')
@@ -82,7 +84,7 @@ def menu():
                     print()
                     break
 
-        elif opcao == '2':
+        elif opcao == 2:
 
             nome = input("\nInforme o nome: ")
             telefone = input("Informe o telefone: ")
@@ -92,7 +94,7 @@ def menu():
             pessoas.cadastrar_pessoa(nome, telefone, email, especie_interesse, preferencia_animal)
             print("\nPessoa cadastrada com sucesso!\n")
 
-        elif opcao == '3':
+        elif opcao == 3:
 
             if pesquisar_animal.vazia():
                 print('\nNão tem animais disponíveis.\n')
@@ -103,7 +105,7 @@ def menu():
                     print(f'Tipo: {animal.tipo}, Idade: {animal.idade}, Cor: {animal.cor}, Porte: {animal.porte}, Particularidade: {animal.particularidade}')
                 print()
 
-        elif opcao == '4':
+        elif opcao == 4:
             
             especie_interesse = input("\nNome da especie que a pessoa tenha interesse (ex: canino, felino): ")
             preferencia_animal = input("Informe a preferência do animal: (ex: adulto) ")
@@ -117,7 +119,7 @@ def menu():
                     print(f"Nome: {pessoa.nome}, Telefone: {pessoa.telefone}, Espécie de interesse: {pessoa.especie_interesse}, Preferência: {pessoa.preferencia_animal}")
                 print()
 
-        elif opcao == '5':
+        elif opcao == 5:
             print('\nSaindo do programa... ')
             break
         else:
