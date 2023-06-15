@@ -2,6 +2,13 @@ from modules.pilha import Pilha
 from modules.animal import Animal
 
 class CadastrarAnimal:
+    """
+    Classe para Cadastrar Animal.
+    
+    animais             - pilha de animais
+    cadastrar_animal()  - função para cadastrar animal
+    pesquisar_animais() - função para pesquisar animais (retorna uma pilha de animais encontrados)
+    """
     def __init__(self):
         self.animais = Pilha()
 
