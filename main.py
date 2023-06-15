@@ -3,6 +3,7 @@
 # Disciplina: Estrutura de Dados
 # Professor: Marcio Garrido
 # Data: 15/06/2023
+# Repositório do Projeto: https://github.com/hygorrasec/p2_abandono_de_animais
 
 '''
 A prefeitura necessita de um sistema capaz de cadastrar todos os animais de acordo com sua especie (canino, felino, etc.), sendo fundamental a capacidade de inserir novas espécies de animais de forma dinâmica. Além disso, é necessário classificá-los de acordo com a idade aproximada, cor, porte e qualquer particularidade que possuam. No mesmo sistema, deve haver um cadastro das pessoas interessadas em adoção, contendo as informações de contato e a espécie pela qual estão interessadas. Ao selecionar a espécie desejada, o sistema também deve permitir que sejam especificadas preferências em relação ao animal.
