@@ -12,7 +12,11 @@ class CadastrarAnimal:
     def __init__(self):
         self.animais = Pilha()
 
-    def cadastrar_animal(self, tipo, idade, cor, porte, particularidade):
+    def cadastrar_animal(self, tipo='', idade='', cor='', porte='', particularidade=''):
+        if tipo == '' or idade == '' or cor == '' or porte == '':
+            return
+        if particularidade == '':
+            particularidade = 'Não informado'
         animal = Animal(tipo, idade, cor, porte, particularidade)
         self.animais.empilhar(animal)
 

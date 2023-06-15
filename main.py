@@ -35,26 +35,55 @@ Aqui está um exemplo de representação visual de uma pilha:
 
 from modules.cadastrar_animal import CadastrarAnimal
 
-# Cadastrando animais
-animais = CadastrarAnimal()
-animais.cadastrar_animal('cachorro 1', 2, 'preto', 'grande', 'não tem')
-animais.cadastrar_animal('cachorro 2', 2, 'preto', 'grande', 'não tem')
-animais.cadastrar_animal('cachorro 3', 2, 'preto', 'grande', 'não tem')
-pesquisar_animal = animais.pesquisar_animais()
 
-if pesquisar_animal.vazia():
-    print("Não tem animais disponíveis.")
-else:
-    print("Animais disponíveis: ")
-    while not pesquisar_animal.vazia():
-        animal = pesquisar_animal.desempilhar()
-        print(f"Tipo: {animal.tipo}, Idade: {animal.idade}, Cor: {animal.cor}, Porte: {animal.porte}, Particularidade: {animal.particularidade}")
+def menu():
+    animais = CadastrarAnimal()
+    while True:
+        pesquisar_animal = animais.pesquisar_animais()
+        print('Menu: ')
+        print('1 - Cadastrar Animal')
+        print('2 - Pesquisar Animais Disponíveis')
+        print('3 - Sair')
+        opcao = input('> ')
+
+        if opcao == '1':
+
+            while True:
+                tipo_animal = input('\nInforme o tipo de Animal (ex: canino, felino): ')
+                idade = input('Informe a idade em anos: ')
+                cor = input('Informe a cor: ')
+                porte = input('Informe o porte (pequeno, médio ou grande): ')
+                particularidade = input('Informe alguma particularidade (se não tiver pode deixar em branco): ')
+                
+                animais.cadastrar_animal(tipo_animal, idade, cor, porte, particularidade)
+
+                continuar = input('\nContinuar cadastrando animais (digite "s" para continuar ou "n" para sair): ')
+                
+                if continuar == 'n':
+                    print()
+                    break
+
+        elif opcao == '2':
+
+            if pesquisar_animal.vazia():
+                print('\nNão tem animais disponíveis.\n')
+            else:
+                print('\nAnimais disponíveis:\n')
+                while not pesquisar_animal.vazia():
+                    animal = pesquisar_animal.desempilhar()
+                    print(f'Tipo: {animal.tipo}, Idade: {animal.idade}, Cor: {animal.cor}, Porte: {animal.porte}, Particularidade: {animal.particularidade}')
+                print()
+
+        elif opcao == '3':
+            print('\nSaindo do programa... ')
+            break
+        else:
+            print('Opção inválida!')
 
 
-# Cadastrando e acessando as informações da pessoa
-# pessoa_01 = Pessoa('João', '99999-9999', 'email@gmail.com', 'cachorro', 'grande')
-# print("Nome:", pessoa_01.nome)
-# print("Telefone:", pessoa_01.telefone)
-# print("Email:", pessoa_01.email)
-# print("Especie de interesse:", pessoa_01.especie_interesse)
-# print("Preferencia de animal:", pessoa_01.preferencia_animal)
+def main():
+    menu()
+
+
+if __name__ == '__main__':  # condição que verifica se o módulo está sendo executado diretamente (ou seja, não sendo importado por outro módulo).
+    main()
