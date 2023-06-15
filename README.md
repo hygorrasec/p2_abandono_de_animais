@@ -6,6 +6,16 @@ Este repositório contém o código-fonte de um sistema desenvolvido para a pref
 
 ![Fluxograma](https://raw.githubusercontent.com/hygorrasec/p2_abandono_de_animais/02f7c167fa02c873296499c7e50689f63f5c2c14/docs/fluxograma.jpg?token=GHSAT0AAAAAACBJCB7OBIG3APJ3MEIBLBCMZELNFCQ)
 
+## Estrutura do projeto
+
+![Estrutura do projeto](https://raw.githubusercontent.com/hygorrasec/p2_abandono_de_animais/main/docs/img01.png?token=GHSAT0AAAAAACBJCB7OQW6Z5YNSHS2NBSGKZELOXAQ)
+
+## Arquivo main.py
+![main.py](https://raw.githubusercontent.com/hygorrasec/p2_abandono_de_animais/main/docs/img02.png?token=GHSAT0AAAAAACBJCB7P2PQ5NBQHRUOZMSUMZELOXWA)
+
+## Execução do programa
+![Execução do programa](https://raw.githubusercontent.com/hygorrasec/p2_abandono_de_animais/main/docs/img03.png?token=GHSAT0AAAAAACBJCB7OR25IKB55EBMO2UZIZELOYKQ)
+
 ## Participantes
 
 - Hygor Rasec ([GitHub](https://github.com/hygorrasec))
