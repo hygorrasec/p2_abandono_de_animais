@@ -4,6 +4,7 @@ def cabecalho(txt):
     """
     print(txt.center(45))
 
+
 def is_alpha_space(str):
     """
     Função para verificar se a string contém apenas letras e espaços.
@@ -51,7 +52,7 @@ def verificar_opcao(msg, msg1):
             print(f'{msg1}')
             
 
-def Idade():
+def idade():
     """
     Função para validar idade.
     """
