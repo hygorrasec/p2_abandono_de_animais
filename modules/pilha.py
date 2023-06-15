@@ -2,7 +2,8 @@ class No:
     """
     Classe do nó.
     
-    Essa classe contém uma variável para armazenar os dados chamada 'dados' e outra variável chamada 'proximo', que seria como um ponteiro que aponta para o próximo elemento e vai iniciar nulo.
+    Essa classe contém uma variável para armazenar os dados chamada 'dados' e outra variável
+    chamada 'proximo', que seria como um ponteiro que aponta para o próximo elemento e vai iniciar nulo.
     """
     def __init__(self, dados):
         self.dados = dados 
