@@ -2,6 +2,10 @@
 
 Este repositório contém o código-fonte de um sistema desenvolvido para a prefeitura que tem como objetivo cadastrar e facilitar o processo de adoção de animais. O sistema foi elaborado como parte de um estudo de caso realizado por alunos do curso de Engenharia de Software na disciplina de Estrutura de Dados, ministrada pelo professor Marcio Garrido ([GitHub](https://github.com/marciogarridoLaCop)), a fim de validar a proposta do programa junto ao solicitante.
 
+## Fluxograma
+
+![Fluxograma](https://raw.githubusercontent.com/hygorrasec/p2_abandono_de_animais/02f7c167fa02c873296499c7e50689f63f5c2c14/docs/fluxograma.jpg?token=GHSAT0AAAAAACBJCB7OBIG3APJ3MEIBLBCMZELNFCQ)
+
 ## Participantes
 
 - Hygor Rasec ([GitHub](https://github.com/hygorrasec))
