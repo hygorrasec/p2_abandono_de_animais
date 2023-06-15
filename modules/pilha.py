@@ -46,5 +46,5 @@ class Pilha:
         if No is None:
             return
         animal = No.dados
-        print(f"Tipo: {animal.tipo}, Idade: {animal.idade}, Cor: {animal.cor}, Porte: {animal.porte}, Particularidade: {animal.particularidade}")
+        print(f"Espécie: {animal.especie}, Idade: {animal.idade}, Cor: {animal.cor}, Porte: {animal.porte}, Particularidade: {animal.particularidade}")
         self.imprime(No.proximo)

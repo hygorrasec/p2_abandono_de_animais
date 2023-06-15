@@ -12,22 +12,22 @@ class CadastrarAnimal:
     def __init__(self):
         self.animais = Pilha()
 
-    def cadastrar_animal(self, tipo, idade, cor, porte, particularidade):
-        if tipo == '' or idade == '' or cor == '' or porte == '':
+    def cadastrar_animal(self, especie, idade, cor, porte, particularidade):
+        if especie == '' or idade == '' or cor == '' or porte == '':
             return
         if particularidade == '':
             particularidade = 'Não informado'
-        animal = Animal(tipo, idade, cor, porte, particularidade)
+        animal = Animal(especie, idade, cor, porte, particularidade)
         self.animais.empilhar(animal)
 
-    def pesquisar_animais(self, tipo=None, idade=None, cor=None, porte=None, particularidade=None):
+    def pesquisar_animais(self, especie=None, idade=None, cor=None, porte=None, particularidade=None):
         animais_encontrados = Pilha()
         pilha_temp = Pilha()
 
         while not self.animais.vazia():  # enquanto a pilha não estiver vazia
             animal = self.animais.desempilhar()
 
-            if (tipo is None or animal.tipo == tipo) and \
+            if (especie is None or animal.especie == especie) and \
                (idade is None or animal.idade == idade) and \
                (cor is None or animal.cor == cor) and \
                (porte is None or animal.porte == porte) and \
